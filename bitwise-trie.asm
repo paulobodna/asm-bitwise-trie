@@ -141,7 +141,7 @@ end_checker_loop:
 
 	move $s0, $a0 		# No caso de o numero digitado ser válido, ele será salvo em um registrador s0				
 		      		# Até aqui o endereço que é guardado por a0, tem seu conteudo alterado 
-		    
+		    		# Caso o numero seja invalido, $a0 e #s0 recebem -1
 	jr $ra
 
 	
@@ -234,6 +234,8 @@ insert:
 	syscall
 
 	jal read_str
+	
+	blt $s0, 1, insert		# Se string[i] <= \0, retorne ao inicio da insercao
 
 	move $t0, $s0	
 	move $t1, $s1
@@ -388,7 +390,7 @@ search:
 
    	jal read_str			# Verifique se o numero digitado eh valido (binario)
 
-   	blt $s0, $zero, search		# Se string[i] == \0, retorne ao inicio da busca
+   	blt $s0, 1, search		# Se string[i] <= \0, retorne ao inicio da busca
    	
    	move $t0, $s0			# t0 guarda temporariamente o endereço para a string. 
 	move $t1, $s1			# O mesmo ocorre com t1, que agora recebe o endereço para a raiz da arvore
@@ -616,6 +618,8 @@ remove:
 	syscall
 
 	jal read_str			# Verifique se o binario digitado é valido, invalido ou -1
+
+   	blt $s0, 1, remove		# Se string[i] <= \0, retorne ao inicio da remocao
 	
 	move $t0, $s0			# Numero a ser removido
 	move $t1, $s1			# Raiz da arvore
