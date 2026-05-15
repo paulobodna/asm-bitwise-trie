@@ -1,20 +1,3 @@
-# =============================================================================================================
-#		Trabalho 1 de Organizacao de Computadores Digitais I
-#
-#         Filename:  T1.asm 
-#  	  Description:  Implementacao de uma Arvore de Busca Digital Binaria 
-#
-#         Nome:	Eduardo Zaboto Mirolli								No USP:	9778501
-#	  Participacao:	Leitura e checagem de strings; inserção; busca e; visualização da arvore
-#
-#         Nome:	Paulo Henrique Bodnarchuki da Cruz						No USP:	9790944
-#	  Participacao: Busca; Remoção; Visualização da arvore e; Debug
-#
-#         Nome:	Gabriel Romualdo Silveira Pupo 							No USP: 9896250
-#	  Participacao: Inserção; Busca; Busca por chaves repetidas e; remoção
-#
-# ===============================================================================================================
-
 	.data
 	.align 0
 

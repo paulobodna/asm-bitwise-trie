@@ -1,6 +1,6 @@
 # Bitwise Trie in MIPS Assembly
 
-Implementation of a **Binary Digital Search Tree (Bitwise Trie)** using **MIPS Assembly**, developed for the course *Organização de Computadores Digitais I*.
+Implementation of a **Binary Digital Search Tree (Bitwise Trie)** using **MIPS Assembly**.
 
 The project allows insertion, search, removal, and visualization of binary keys using a trie structure.
 
@@ -11,7 +11,7 @@ The project allows insertion, search, removal, and visualization of binary keys 
 1. **[Features](#features)**
 2. **[How it works](#how-it-works)**
 3. **[Running the project](#running-the-project)**
-4. **[Usage](#usage)**
+4. **[Operations](#operations)**
 5. **[Examples](#examples)**
 6. **[Technical Details](#technical-details)**
 7. **[Authors](#authors)**
@@ -80,7 +80,7 @@ Then open bitwise-trie.asm and run it.
 
 ---
 
-## Usage
+## Operations
 
 When running, you will see:
 ````
@@ -91,16 +91,15 @@ When running, you will see:
 5 - Sair`
 ````
 
-### Operations
-- **Insert:** Add a binary string (e.g. 10101)
-- **Remove:** Delete a key from the trie
-- **Search:** Find a key and display traversal path
-- **Visualize:** Print the tree structure
-- **Exit:** Terminate program
+|Operation|Description|Values|
+|-|-|-|
+| **Insert**     | Add a binary string                   | `0`'s or `1`'s (or `-1` to exit)
+| **Remove**     | Delete a key from the trie            | `0`'s or `1`'s (or `-1` to exit)
+| **Search**     | Find a key and display traversal path | `0`'s or `1`'s (or `-1` to exit)
+| **Visualize**  | Print the tree structure              | ---
+| **Exit**       | Terminate program                     | ---
 
-### Notes
-Only binary inputs (0 and 1) are accepted
-Typing -1 returns to the menu
+### Note
 Duplicate keys are not allowed
 
 ---
