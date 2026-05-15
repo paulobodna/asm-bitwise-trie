@@ -6,7 +6,7 @@ The project allows insertion, search, removal, and visualization of binary keys 
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
 1. **[Features](#features)**
 2. **[How it works](#how-it-works)**
@@ -120,19 +120,16 @@ Caminho percorrido: raiz, dir, esq, dir
 ## Technical Details
 - Language: MIPS Assembly
 - Simulator: MARS
-- Memory:
-- Nodes allocated dynamically via syscall (heap)
-- Tree traversal:
-- Bit-by-bit navigation
-- Visualization:
-- Level-order traversal using stack as queue
+- Memory: nodes allocated dynamically via syscall (heap)
+- Tree traversal: bit-by-bit navigation
+- Visualization: level-order traversal using stack as queue
 
 ---
 
 ## Authors
-- Eduardo Zaboto Mirolli
-- Paulo Henrique Bodnarchuki da Cruz
-- Gabriel Romualdo Silveira Pupo
+- [@paulobodna](https://github.com/paulobodna)
+- [@EdZM](https://github.com/EdZM)
+- [@gabopupo](https://github.com/gabopupo)
 
 ---
 
