@@ -4,7 +4,7 @@ Implementation of a **Binary Digital Search Tree (Bitwise Trie)** using **MIPS A
 
 The project allows insertion, search, removal, and visualization of binary keys using a trie structure.
 
----
+
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@ The project allows insertion, search, removal, and visualization of binary keys 
 7. **[Authors](#authors)**
 8. **[References](#references)**
 
----
+
 
 ## Features
 
@@ -28,7 +28,7 @@ The project allows insertion, search, removal, and visualization of binary keys 
 - Print the tree structure (level-order visualization)
 - Input validation (only binary values allowed)
 
----
+
 
 ## How it works
 
@@ -41,7 +41,7 @@ Each node represents a bit (`0` or `1`) and contains:
 
 The root is a special node.
 
----
+
 
 ## Running the project
 
@@ -78,7 +78,7 @@ java -jar mars.jar
 ````
 Then open bitwise-trie.asm and run it.
 
----
+
 
 ## Operations
 
@@ -102,7 +102,7 @@ When running, you will see:
 ### Note
 Duplicate keys are not allowed
 
----
+
 
 ## Examples
 ````
@@ -114,7 +114,7 @@ Output:
 Chave encontrada na arvore: 101
 Caminho percorrido: raiz, dir, esq, dir
 ````
----
+
 
 ## Technical Details
 - Language: MIPS Assembly
@@ -123,14 +123,14 @@ Caminho percorrido: raiz, dir, esq, dir
 - Tree traversal: bit-by-bit navigation
 - Visualization: level-order traversal using stack as queue
 
----
+
 
 ## Authors
 - [@paulobodna](https://github.com/paulobodna)
 - [@EdZM](https://github.com/EdZM)
 - [@gabopupo](https://github.com/gabopupo)
 
----
+
 
 ## References
 - https://www.geeksforgeeks.org/trie-insert-and-search/
